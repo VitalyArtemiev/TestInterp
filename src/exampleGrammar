@@ -1,0 +1,8 @@
+lang: expr*
+expr: var assign stmt
+stmt: val (op val)*
+val: var|const
+var: [a-z]+
+assign: :=
+op: +|-|*|/
+const: 0|([1-9]{1}[0-9]*)

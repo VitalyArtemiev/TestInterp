@@ -1,0 +1,23 @@
+{
+    a:= 1
+    b:= 2 + 3
+    c:= a - b
+
+    if a + b < 7 {
+        b:= b + 1
+    }
+                        <<<p1
+    while c < b {
+        c:= c + 1
+        a:= a / 2
+    }
+                        <<<p2
+    b:= a * c
+
+    printVarTable
+}
+
+jF: jump on false
+
+a 1 := c 2 3 + := b 2 3 + := a b + 7 < p1 jF b b 1 + := c b < p2 jF
+   1  |    2     |    3     |    4          |    5     |
