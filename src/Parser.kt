@@ -1,4 +1,4 @@
-class Parser (val TokenList: Array<Token>) {
+class Parser (val TokenList: ArrayList<Token>) {
     var currentToken: Token = TokenList.first()
 
     fun match() {
